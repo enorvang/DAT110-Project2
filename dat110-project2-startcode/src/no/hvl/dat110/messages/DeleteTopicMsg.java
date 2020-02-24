@@ -1,12 +1,10 @@
 package no.hvl.dat110.messages;
 
 public class DeleteTopicMsg extends Message {
-    // TODO:
-    // Implement objectvariables, constructor, get/set-methods, and toString method
 
     private String topic;
 
-    public DeleteTopicMsg(String user, String topic){
+    public DeleteTopicMsg(String user, String topic) {
         super(MessageType.DELETETOPIC, user);
         this.topic = topic;
     }
@@ -19,7 +17,7 @@ public class DeleteTopicMsg extends Message {
         this.topic = topic;
     }
 
-    public String toString(){
+    public String toString() {
         return "[Topic deleted. User=" + getUser() + " Topic=" + getTopic() + "]";
     }
 }

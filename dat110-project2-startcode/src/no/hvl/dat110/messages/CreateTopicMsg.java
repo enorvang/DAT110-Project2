@@ -1,11 +1,9 @@
 package no.hvl.dat110.messages;
 
 public class CreateTopicMsg extends Message {
-	private String topic;
+    private String topic;
 
-    // TODO:
-    // Implement objectvariables, constructor, get/set-methods, and toString method
-    public CreateTopicMsg(String user, String topic){
+    public CreateTopicMsg(String user, String topic) {
         super(MessageType.CREATETOPIC, user);
         this.topic = topic;
     }
@@ -19,7 +17,7 @@ public class CreateTopicMsg extends Message {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "[New Topic. User=" + getUser() + " Topic=" + getTopic() + "]";
     }
 }

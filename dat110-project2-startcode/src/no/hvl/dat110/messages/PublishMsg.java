@@ -5,7 +5,7 @@ public class PublishMsg extends Message {
     private String topic;
     private String message;
 
-    public PublishMsg(String user, String topic, String message){
+    public PublishMsg(String user, String topic, String message) {
         super(MessageType.PUBLISH, user);
         this.topic = topic;
         this.message = message;
@@ -27,7 +27,7 @@ public class PublishMsg extends Message {
         this.message = message;
     }
 
-    public String toString(){
+    public String toString() {
         return "[New publication! User=" + getUser() + " Topic=" + topic + "Message=" + message + "]";
     }
 }
