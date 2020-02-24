@@ -13,8 +13,8 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582541843282" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../DAT110/dat110public-2020" />
   </component>
-  <component name="RunManager">
-    <configuration name="TestStorage.testaddClientSession" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestStorage">
+    <configuration name="TestStorage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dat110-project2-testing" />
       <extension name="coverage">
         <pattern>
@@ -24,7 +24,70 @@
       </extension>
       <option name="PACKAGE_NAME" value="no.hvl.dat110.broker.storage.tests" />
       <option name="MAIN_CLASS_NAME" value="no.hvl.dat110.broker.storage.tests.TestStorage" />
-      <option name="METHOD_NAME" value="testaddClientSession" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestStorage.testaddSubscriber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dat110-project2-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.hvl.dat110.broker.storage.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="no.hvl.dat110.broker.storage.tests" />
+      <option name="MAIN_CLASS_NAME" value="no.hvl.dat110.broker.storage.tests.TestStorage" />
+      <option name="METHOD_NAME" value="testaddSubscriber" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestStorage.testaddSubscribers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dat110-project2-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.hvl.dat110.broker.storage.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="no.hvl.dat110.broker.storage.tests" />
+      <option name="MAIN_CLASS_NAME" value="no.hvl.dat110.broker.storage.tests.TestStorage" />
+      <option name="METHOD_NAME" value="testaddSubscribers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestStorage.testdeleteTopic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dat110-project2-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.hvl.dat110.broker.storage.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="no.hvl.dat110.broker.storage.tests" />
+      <option name="MAIN_CLASS_NAME" value="no.hvl.dat110.broker.storage.tests.TestStorage" />
+      <option name="METHOD_NAME" value="testdeleteTopic" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestStorage.testremoveSubscribers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dat110-project2-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.hvl.dat110.broker.storage.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="no.hvl.dat110.broker.storage.tests" />
+      <option name="MAIN_CLASS_NAME" value="no.hvl.dat110.broker.storage.tests.TestStorage" />
+      <option name="METHOD_NAME" value="testremoveSubscribers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -32,7 +95,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestStorage.testaddClientSession" />
+        <item itemvalue="JUnit.TestStorage" />
+        <item itemvalue="JUnit.TestStorage.testremoveSubscribers" />
+        <item itemvalue="JUnit.TestStorage.testaddSubscribers" />
+        <item itemvalue="JUnit.TestStorage.testaddSubscriber" />
+        <item itemvalue="JUnit.TestStorage.testdeleteTopic" />
       </list>
     </recent_temporary>
   </component>
