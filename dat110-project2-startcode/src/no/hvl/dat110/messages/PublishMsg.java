@@ -21,6 +21,6 @@ public class PublishMsg extends Message {
     }
 
     public String toString(){
-        return "[New publication. User=" + getUser() + " Topic=" + getTopic() + "]";
+        return "[New publication! User=" + getUser() + " Topic=" + getTopic() + "]";
     }
 }
