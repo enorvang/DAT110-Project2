@@ -6,10 +6,12 @@ public class PublishMsg extends Message {
 	// Implement objectvariables, constructor, get/set-methods, and toString method
 
     private String topic;
+    private String message;
 
-    public PublishMsg(String user, String topic){
+    public PublishMsg(String user, String topic, String message){
         super(MessageType.PUBLISH, user);
         this.topic = topic;
+        this.message = message;
     }
 
     public String getTopic() {
@@ -20,7 +22,15 @@ public class PublishMsg extends Message {
         this.topic = topic;
     }
 
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
     public String toString(){
-        return "[New publication! User=" + getUser() + " Topic=" + getTopic() + "]";
+        return "[New publication! User=" + getUser() + " Topic=" + topic + "Message=" + message + "]";
     }
 }
