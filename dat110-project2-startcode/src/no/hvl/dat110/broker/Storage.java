@@ -10,7 +10,10 @@ import no.hvl.dat110.messagetransport.Connection;
 
 public class Storage {
 
+	//maps topics to a set of users subscriped to that topic
 	protected ConcurrentHashMap<String, Set<String>> subscriptions;
+
+	//mapping from user to clientsession object that represents the connection/session with the client
 	protected ConcurrentHashMap<String, ClientSession> clients;
 
 	public Storage() {
@@ -44,16 +47,15 @@ public class Storage {
 	public void addClientSession(String user, Connection connection) {
 
 		// TODO: add corresponding client session to the storage
-		
-		throw new UnsupportedOperationException(TODO.method());
+		ClientSession cs = new ClientSession(user, connection);
+		clients.put(user, cs);
 		
 	}
 
 	public void removeClientSession(String user) {
 
 		// TODO: remove client session for user from the storage
-
-		throw new UnsupportedOperationException(TODO.method());
+		clients.remove(user);
 		
 	}
 

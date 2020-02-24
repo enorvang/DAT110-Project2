@@ -1,5 +1,6 @@
 package no.hvl.dat110.broker.storage.tests;
 
+import static junit.framework.Assert.assertEquals;
 import static org.junit.Assert.*;
 
 import java.util.Set;
