@@ -73,7 +73,6 @@ public class Storage {
 
 	public void addSubscriber(String user, String topic) {
 
-		// TODO: add the user as subscriber to the topic
 		HashSet<String> hs = (HashSet<String>) getSubscribers(topic);
 		hs.add(user);
 

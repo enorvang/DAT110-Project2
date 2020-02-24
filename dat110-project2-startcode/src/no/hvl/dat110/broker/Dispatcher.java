@@ -1,5 +1,6 @@
 package no.hvl.dat110.broker;
 
+import java.util.HashSet;
 import java.util.Set;
 import java.util.Collection;
 
@@ -106,50 +107,60 @@ public class Dispatcher extends Stopable {
 
 	public void onCreateTopic(CreateTopicMsg msg) {
 
+		String topic = msg.getTopic();
+
 		Logger.log("onCreateTopic:" + msg.toString());
 
-		// TODO: create the topic in the broker storage
-		
-		throw new UnsupportedOperationException(TODO.method());
+		storage.createTopic(topic);
 
 	}
 
 	public void onDeleteTopic(DeleteTopicMsg msg) {
 
+		String topic = msg.getTopic();
+
 		Logger.log("onDeleteTopic:" + msg.toString());
 
-		// TODO: delete the topic from the broker storage
-		//her er det en veldig ubrukelig kommentar
+		storage.deleteTopic(topic);
 		
-		throw new UnsupportedOperationException(TODO.method());
 	}
 
 	public void onSubscribe(SubscribeMsg msg) {
 
+		String topic = msg.getTopic();
+		String user = msg.getUser();
+
 		Logger.log("onSubscribe:" + msg.toString());
 
-		// TODO: subscribe user to the topic
-		
-		throw new UnsupportedOperationException(TODO.method());
-		
+		storage.addSubscriber(user, topic);
+
 	}
 
 	public void onUnsubscribe(UnsubscribeMsg msg) {
 
+		String topic = msg.getTopic();
+		String user = msg.getUser();
+
 		Logger.log("onUnsubscribe:" + msg.toString());
 
-		// TODO: unsubscribe user to the topic
+		storage.removeSubscriber(user, topic);
 		
-		throw new UnsupportedOperationException(TODO.method());
 	}
 
 	public void onPublish(PublishMsg msg) {
 
+		String topic = msg.getTopic();
+
 		Logger.log("onPublish:" + msg.toString());
 
-		// TODO: publish the message to clients subscribed to the topic
+		HashSet<String> subscribers = (HashSet<String>) storage.getSubscribers(topic);
+
+		for(String sub : subscribers){
+			storage.getSession(sub).send(msg);
+		}
+
+
 		
-		throw new UnsupportedOperationException(TODO.method());
-		
+
 	}
 }
