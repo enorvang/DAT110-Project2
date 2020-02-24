@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+HEAD
     <list default="true" id="d6adaf07-5995-4e64-be19-c44d472c01d0" name="Default Changelist" comment="" />
+
+    <list default="true" id="d6adaf07-5995-4e64-be19-c44d472c01d0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dat110-project2-startcode/src/no/hvl/dat110/broker/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/dat110-project2-startcode/src/no/hvl/dat110/broker/Storage.java" afterDir="false" />
+    </list>
+8fab55524701090d103a49ad4eb19b3d261acd3d
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/dat110-project2-startcode/bin/" />
     <ignored path="$PROJECT_DIR$/dat110-project2-testing/bin/" />
@@ -16,8 +23,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dat110-project2-startcode/src/no/hvl/dat110/broker/Storage.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="715">
               <caret line="90" column="4" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="4" />
+=======
+            <state relative-caret-position="307">
+              <caret line="89" column="4" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="4" />
+>>>>>>> 8fab55524701090d103a49ad4eb19b3d261acd3d
               <folding>
                 <element signature="e#757#758#0" expanded="true" />
                 <element signature="e#787#788#0" expanded="true" />
@@ -29,8 +41,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dat110-project2-testing/src/no/hvl/dat110/broker/storage/tests/TestStorage.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="51">
               <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+=======
+            <state relative-caret-position="-901">
+              <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+>>>>>>> 8fab55524701090d103a49ad4eb19b3d261acd3d
             </state>
           </provider>
         </entry>
@@ -127,7 +144,11 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582542694746" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582542423561" />
+>>>>>>> 8fab55524701090d103a49ad4eb19b3d261acd3d
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../DAT110/dat110public-2020" />
   </component>
   <component name="RunDashboard">
@@ -144,6 +165,8 @@
   </component>
   <component name="RunManager" selected="JUnit.TestStorage">
     <configuration name="TestStorage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+<<<<<<< HEAD
+=======
       <module name="dat110-project2-testing" />
       <extension name="coverage">
         <pattern>
@@ -191,6 +214,7 @@
       </method>
     </configuration>
     <configuration name="TestStorage.testdeleteTopic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+>>>>>>> 8fab55524701090d103a49ad4eb19b3d261acd3d
       <module name="dat110-project2-testing" />
       <extension name="coverage">
         <pattern>
@@ -200,6 +224,56 @@
       </extension>
       <option name="PACKAGE_NAME" value="no.hvl.dat110.broker.storage.tests" />
       <option name="MAIN_CLASS_NAME" value="no.hvl.dat110.broker.storage.tests.TestStorage" />
+<<<<<<< HEAD
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestStorage.testaddSubscriber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dat110-project2-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.hvl.dat110.broker.storage.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="no.hvl.dat110.broker.storage.tests" />
+      <option name="MAIN_CLASS_NAME" value="no.hvl.dat110.broker.storage.tests.TestStorage" />
+      <option name="METHOD_NAME" value="testaddSubscriber" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestStorage.testaddSubscribers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dat110-project2-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.hvl.dat110.broker.storage.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="no.hvl.dat110.broker.storage.tests" />
+      <option name="MAIN_CLASS_NAME" value="no.hvl.dat110.broker.storage.tests.TestStorage" />
+      <option name="METHOD_NAME" value="testaddSubscribers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestStorage.testdeleteTopic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dat110-project2-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.hvl.dat110.broker.storage.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="no.hvl.dat110.broker.storage.tests" />
+      <option name="MAIN_CLASS_NAME" value="no.hvl.dat110.broker.storage.tests.TestStorage" />
+=======
+>>>>>>> 8fab55524701090d103a49ad4eb19b3d261acd3d
       <option name="METHOD_NAME" value="testdeleteTopic" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -261,6 +335,7 @@
     <history-entry file="TestStorage_testaddSubscriber - 2020.02.24 at 12h 05m 41s.xml">
       <configuration name="TestStorage.testaddSubscriber" configurationId="JUnit" />
     </history-entry>
+<<<<<<< HEAD
     <history-entry file="TestStorage_testaddSubscribers - 2020.02.24 at 12h 06m 54s.xml">
       <configuration name="TestStorage.testaddSubscribers" configurationId="JUnit" />
     </history-entry>
@@ -270,6 +345,8 @@
     <history-entry file="TestStorage - 2020.02.24 at 12h 07m 04s.xml">
       <configuration name="TestStorage" configurationId="JUnit" />
     </history-entry>
+=======
+>>>>>>> 8fab55524701090d103a49ad4eb19b3d261acd3d
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -304,6 +381,29 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
+<<<<<<< HEAD
+=======
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/dat110-project2-testing/src/no/hvl/dat110/broker/storage/tests/TestStorage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-901">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dat110-project2-startcode/src/no/hvl/dat110/broker/Storage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="89" column="4" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="4" />
+          <folding>
+            <element signature="e#757#758#0" expanded="true" />
+            <element signature="e#787#788#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+>>>>>>> 8fab55524701090d103a49ad4eb19b3d261acd3d
   <component name="masterDetails">
     <states>
       <state key="ProjectJDKs.UI">
