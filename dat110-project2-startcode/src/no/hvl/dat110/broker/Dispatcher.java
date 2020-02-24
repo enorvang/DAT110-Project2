@@ -109,7 +109,7 @@ public class Dispatcher extends Stopable {
 		Logger.log("onCreateTopic:" + msg.toString());
 
 		// TODO: create the topic in the broker storage
-		//skal gjøres etterpå
+		//useless test comment
 		
 		throw new UnsupportedOperationException(TODO.method());
 
