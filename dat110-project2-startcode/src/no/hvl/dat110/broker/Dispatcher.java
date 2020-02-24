@@ -119,6 +119,7 @@ public class Dispatcher extends Stopable {
 		Logger.log("onDeleteTopic:" + msg.toString());
 
 		// TODO: delete the topic from the broker storage
+		//her er det en veldig ubrukelig kommentar
 		
 		throw new UnsupportedOperationException(TODO.method());
 	}
