@@ -28,6 +28,6 @@ public class PublishMsg extends Message {
     }
 
     public String toString() {
-        return "[New publication! User=" + getUser() + " Topic=" + topic + "Message=" + message + "]";
+        return "[New publication! User=" + getUser() + " Topic=" + topic + " Message=" + message + "]";
     }
 }

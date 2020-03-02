@@ -92,6 +92,17 @@ public class Dispatcher extends Stopable {
 
 		storage.addClientSession(user, connection);
 
+		ClientSession cs = storage.getSession(user);
+
+		Set<Message> messages = storage.getBufferedMessages(user);
+
+		if(messages != null){
+			messages.forEach(m -> cs.send(m));
+			storage.clearBufferedMessages(user);
+		}
+
+
+
 	}
 
 	// called by dispatch upon receiving a disconnect message 
@@ -155,8 +166,13 @@ public class Dispatcher extends Stopable {
 
 		HashSet<String> subscribers = (HashSet<String>) storage.getSubscribers(topic);
 
+
 		for(String sub : subscribers){
-			storage.getSession(sub).send(msg);
+			if(storage.getSession(sub) == null){
+				storage.addBufferedMessage(sub, msg);
+			}else {
+				storage.getSession(sub).send(msg);
+			}
 		}
 
 

@@ -7,7 +7,6 @@ public class TransportMessage {
 	private byte[] payload;
 
 	public TransportMessage(byte[] payload) {
-		// TODO: check for length within boundary
 		if (payload == null || (payload.length + 1 > MessageConfig.MESSAGINGPORT)) {
 			throw new RuntimeException("Message: invalid payload");
 		}
@@ -26,9 +25,6 @@ public class TransportMessage {
 	public byte[] encapsulate() {
 		
 		byte[] encoded;
-		
-		// TODO
-		// encapulate/encode the payload of the message
 		
 		encoded = new byte[MessageConfig.SEGMENTSIZE];
 
